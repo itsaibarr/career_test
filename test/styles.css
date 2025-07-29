@@ -1,0 +1,144 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+    background: #fff;
+    padding: 30px 0;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.06);
+}
+
+header .container2 {
+  display: flex;
+  max-width: 1220px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .header_wrap {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.nav li {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: #666666;
+    transition: color 0.3s ease;
+}
+
+.nav li:hover {
+    color: #000;
+}
+
+#-active {
+    color: #000;
+}
+
+.header_btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 13px 25px;
+    background: #2F5DFF;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.header_btn:hover {
+    background: #2F5DFF;
+    box-shadow: 0 0 12px 4px rgba(47, 93, 255, 0.6);
+    transform: scale(1.03);
+}
+
+main .container2 {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+main .container2 h1 {
+  font-size: 55px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 595px;
+}
+
+.container h2, .container .type-block h2 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.24px;
+}
+
+.container p {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.container .instruction {
+  font-weight: 500;
+}
+
+.type-block {
+  margin-bottom: 20px;
+}
+
+.container h2 {
+  margin-bottom: 10px;
+}
+
+.main_btn {
+  padding: 13px 193px;
+  background: #2F5DFF;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.main_btn:hover {
+  background: #2F5DFF;
+  box-shadow: 0 0 12px 4px rgba(47, 93, 255, 0.6);
+  transform: scale(1.03);
+}

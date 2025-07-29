@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+
+body {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  background-color: #F8F9FC;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 804px;
+  min-height: 619px;
+  background-color: #fff;
+  border-radius: 35px;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.06);
+  position: relative;
+  padding: 50px 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.question_name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.question_name h1 {
+  font-size: 32px;
+  max-width: 600px;
+}
+
+.question_name p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 24px;
+}
+
+#test-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.option {
+  width: 100%;
+  min-height: 68px;
+  background: #EFF6FF;
+  border-radius: 6px;
+  padding: 20px 30px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.06);
+}
+
+.option:hover {
+  background: #2F5DFF;
+  color: #fff;
+}
+
+.option.selected {
+  background: #2F5DFF;
+  color: #fff;
+}
+
+.option input[type="radio"] {
+  display: none;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+#prev-button,
+#next-button {
+  padding: 15px 35px;
+  border: none;
+  font-family: 'IBM Plex Sans Condensed';
+  font-size: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#next-button {
+  background: #2F5DFF;
+  color: #fff;
+}
+
+#next-button:disabled {
+  background-color: #A0B9FF;
+  cursor: not-allowed;
+}
+
+#next-button:hover:not(:disabled) {
+  box-shadow: 0 0 12px 4px rgba(47, 93, 255, 0.6);
+  transform: scale(1.03);
+}
+
+#prev-button {
+  background-color: #E6E6E6;
+  color: #333;
+}
+
+#prev-button:disabled {
+  background-color: #ccc;
+  color: #777;
+  cursor: not-allowed;
+}
+
